@@ -1,0 +1,26 @@
+{
+  "name": "cucumbersandwichweb",
+  "version": "1.0.0",
+  "description": "When implemented, remember to `npm install` first after cloning.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlDunnRoq/CucumberSandwichWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlDunnRoq/CucumberSandwichWeb/issues"
+  },
+  "homepage": "https://github.com/CarlDunnRoq/CucumberSandwichWeb#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.11.1",
+    "chromedriver": "^110.0.0"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.8.0"
+  }
+}
