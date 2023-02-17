@@ -82,7 +82,7 @@
                 Colour</button>
             <li id="l2">List item 2</li> <button onclick="getElementById('l2').style.color = 'grey'">Make
                 disappear</button>
-            <li id="l3">List item 3</li> <button onclick="getElementById('l3').style.color = 'green'">Change
+            <li id="l3">List item 3</li> <button onclick="getElementById('l3').innerHTML = 'Green'">Change
                 Colour</button>
         </ul>
     </div>
@@ -94,8 +94,8 @@
         <p id="rannum">This will show a random number when the button is clicked</p>
         <button onclick="mathFunction()">Click me</button>
         <p id="demo" onclick="myFunction()">Click me to change my text color.</p>
-        <p id="fibNumbers">Wanna see the first 700 numbers of the fib sequence in the console?</p>
-        <button onclick="fibNumbers(700)">fibNumbers</button>
+        <p id="fibNumbers">Wanna see the first 100 numbers of the fib sequence in the console?</p>
+        <button onclick="fibNumbers(100)">fibNumbers</button>
     </div>
     <footer>
         <a href="#top">Back to the top of the page</a>
@@ -132,7 +132,7 @@
             a = b;
             b = c;
             console.log(c)
-            document.getElementById('fibNumbers').innerHTML = `${c} is the 700th in the sequence`
+            document.getElementById('fibNumbers').innerHTML = `${c} is the 100th in the sequence`
             index++
             //document.getElementById('fibNumbers').innerHTML = `${c}` ;
         }
