@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cucumber Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+</head>
+
+<body>
+    <div>
+        <header id="header">
+            <nav>
+                <a href="/aboutus.html">About Us</a>
+                <br>
+                <a href="/myspace.html">Myspace</a>
+                <br>
+                <a href="/contactinfo.html">Contact Info</a>
+                <br>
+            </nav>
+        </header>
+        <br>
+    </div>
+    <div id="title">
+        <h1>This is my main title for my website</h1>
+    </div>
+    <br>
+    <div id="mainText">
+        <p id="paragraph0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt facere esse a blanditiis
+            repellat quae
+            quibusdam
+            rem porro dolore! Adipisci similique nostrum voluptatum nam rem deserunt ab, quis magnam maxime!</p>
+        <br><br>
+        <p id="paragraph1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt facere esse a blanditiis
+            repellat quae quibusdam
+            rem porro dolore! Adipisci similique nostrum voluptatum nam rem deserunt ab, quis magnam maxime!</p>
+        <br>
+        <p id="paragraph2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt facere esse a blanditiis
+            repellat quae quibusdam
+            rem porro dolore! Adipisci similique nostrum voluptatum nam rem deserunt ab, quis magnam maxime!</p>
+        <br>
+        <p id="paragraph3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt facere esse a blanditiis
+            repellat quae quibusdam
+            rem porro dolore! Adipisci similique nostrum voluptatum nam rem deserunt ab, quis magnam maxime!</p>
+        <br>
+        <p id="paragraph4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt facere esse a blanditiis
+            repellat quae quibusdam
+            rem porro dolore! Adipisci similique nostrum voluptatum nam rem deserunt ab, quis magnam maxime!</p>
+        <br>
+        <p id="paragraph5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt facere esse a blanditiis
+            repellat quae quibusdam
+            rem porro dolore! Adipisci similique nostrum voluptatum nam rem deserunt ab, quis magnam maxime!</p>
+        <br>
+        <p id="paragraph6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt facere esse a blanditiis
+            repellat quae quibusdam
+            rem porro dolore! Adipisci similique nostrum voluptatum nam rem deserunt ab, quis magnam maxime!</p>
+        <br>
+        <p id="paragraph7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt facere esse a blanditiis
+            repellat quae quibusdam
+            rem porro dolore! Adipisci similique nostrum voluptatum nam rem deserunt ab, quis magnam maxime!</p>
+        <br>
+        <p id="paragraph8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt facere esse a blanditiis
+            repellat quae quibusdam
+            rem porro dolore! Adipisci similique nostrum voluptatum nam rem deserunt ab, quis magnam maxime!</p>
+        <br>
+        <p id="paragraph9">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt facere esse a blanditiis
+            repellat quae quibusdam
+            rem porro dolore! Adipisci similique nostrum voluptatum nam rem deserunt ab, quis magnam maxime!</p>
+        <br>
+        <p id="paragraph10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt facere esse a blanditiis
+            repellat quae quibusdam
+            rem porro dolore! Adipisci similique nostrum voluptatum nam rem deserunt ab, quis magnam maxime!</p>
+    </div>
+    <br>
+
+    <div class="list">
+        <ul>
+            <li id="l1">List item 1</li> <button onclick="getElementById('l1').style.color = 'red'">Change
+                Colour</button>
+            <li id="l2">List item 2</li> <button onclick="getElementById('l2').style.color = 'grey'">Make
+                disappear</button>
+            <li id="l3">List item 3</li> <button onclick="getElementById('l3').style.color = 'green'">Change
+                Colour</button>
+        </ul>
+    </div>
+    <br>
+    <div id="buttons">
+        <p id="time">What's the time Mr Wolf?</p>
+        <button onclick="timeFunction()">Time?</button>
+        <br><br>
+        <p id="rannum">This will show a random number when the button is clicked</p>
+        <button onclick="mathFunction()">Click me</button>
+        <p id="demo" onclick="myFunction()">Click me to change my text color.</p>
+        <p id="fibNumbers">Wanna see the first 700 numbers of the fib sequence in the console?</p>
+        <button onclick="fibNumbers(700)">fibNumbers</button>
+    </div>
+    <footer>
+        <a href="#top">Back to the top of the page</a>
+    </footer>
+</body>
+
+
+
+
+
+
+
+<script>
+    function myFunction() {
+        document.getElementById("demo").style.color = "red";
+    }
+
+    function mathFunction() {
+        document.getElementById("rannum").innerHTML = Math.random();
+    }
+
+    function timeFunction() {
+        document.getElementById('time').innerHTML = Date();
+    }
+
+    function fibNumbers(i) {
+        let index = 0
+
+        let a = 0
+        let b = 1
+
+        while (index < i) {
+            let c = a + b
+            a = b;
+            b = c;
+            console.log(c)
+            document.getElementById('fibNumbers').innerHTML = `${c} is the 700th in the sequence`
+            index++
+            //document.getElementById('fibNumbers').innerHTML = `${c}` ;
+        }
+    }
+</script>
+
+</html>
